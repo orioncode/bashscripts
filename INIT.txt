@@ -1,1 +1,1 @@
-. ./path addPath /c/temp/bash
+. ./path addPath /c/workspaces/BashScripts/bashscripts
