@@ -17,15 +17,9 @@ function updateNodeJS()
 
 function run()
 {
-    npm run serve
-}
-
-
-function installAndRun()
-{
     setup
     updateNodeJS
-    run
+    npm run serve
 }
 
 
