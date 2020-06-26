@@ -1,0 +1,32 @@
+#!/bin/bash
+
+function setup()
+{
+    export STUDIO_TARGET=http://localhost:9999
+    source /etc/bash.bashrc
+    echo "updated STUDIO_TARGET"
+}
+
+
+function updateNodeJS()
+{
+    npm install
+    npm audit fix
+}
+
+
+function run()
+{
+    npm run serve
+}
+
+
+function installAndRun()
+{
+    setup
+    updateNodeJS
+    run
+}
+
+
+"$@"
